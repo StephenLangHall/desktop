@@ -15,15 +15,15 @@ us  # variant
 alpinestep # hostname  
 eth0  
 dhcp  
-\<wifi name>  
-\<wifi password>  
+<wifi name>  
+<wifi password>  
 n  # manual config
-\<password>  # for root
-\<password>  
+<password>  # for root
+<password>  
 America/Louisville  # Time zone
 none  # proxy
 f  # mirror f: fastest r: random e: edit file
-no  
+no  # no user: add a user if you want. I just used root.
 openssh  
 yes  # ssh login as root
 none 
@@ -39,6 +39,7 @@ Setup
 Login as root and do the following:  
 ```
 $ apk add zsh vim git gcc unzip ncurses musl-dev libx11-dev libxft-dev  #depencies
+$ cd /root # or user directory
 $ git clone https://github.com/stephenlanghall/desktop.git  # source for stuff
 $ unzip desktop.zip  
 $ setup-xorg-base  
