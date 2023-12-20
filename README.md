@@ -8,7 +8,7 @@ Install
 
 Download Alpine standard iso, insert a usb drive, and extract image to drive.  
 Login as root, and do the following:  
-<code>
+```
 $ SWAP_SIZE=0 setup-alpine # if you don't want swap  
 us  # keyboard layout  
 us  # variant  
@@ -31,13 +31,13 @@ vda  # disk
 sys  # installation type
 y  # erase disk
 $ reboot  
-</code>
+```
 
 Setup
 -----
 
 Login as root and do the following:  
-<code>
+```
 $ apk add zsh vim git gcc unzip ncurses musl-dev libx11-dev libxft-dev  #depencies
 $ git clone https://github.com/stephenlanghall/desktop.git  # source for stuff
 $ unzip desktop.zip  
@@ -60,4 +60,4 @@ $ chsh -s /bin/zsh
 $ clear > /etc/motd  #optional
 $ clear > /etc/issue  #optional
 $ reboot  
-</code>
+```
